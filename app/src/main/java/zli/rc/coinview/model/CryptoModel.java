@@ -11,5 +11,4 @@ public class CryptoModel {
     private String symbol;
     private double price;
 
-
 }
