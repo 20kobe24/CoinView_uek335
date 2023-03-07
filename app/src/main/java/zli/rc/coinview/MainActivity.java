@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -46,9 +48,39 @@ public class MainActivity extends AppCompatActivity {
         cryptoAdapter = new CryptoAdapter(cryptoModelArrayList, this);
         cryptosRV.setLayoutManager(new LinearLayoutManager(this));
         cryptosRV.setAdapter(cryptoAdapter);
+        getCryptoData();
 
+        searchInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
 
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                searchCryptos(s.toString());
+            }
+        });
+
+    }
+
+    private void searchCryptos(String crypto){
+        ArrayList<CryptoModel> searchedList = new ArrayList<>();
+        for (CryptoModel item : cryptoModelArrayList){
+            if (item.getName().toLowerCase().contains(crypto.toLowerCase())){
+                searchedList.add(item);
+            }
+        }
+        if (searchedList.isEmpty()){
+            Toast.makeText(this, "No Cryptos are found", Toast.LENGTH_SHORT).show();
+        }else {
+            cryptoAdapter.searchList(searchedList);
+        }
     }
 
     private void getCryptoData() {

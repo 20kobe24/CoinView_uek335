@@ -33,6 +33,10 @@ public class CryptoAdapter extends RecyclerView.Adapter<CryptoAdapter.CryptoView
         this.context = context;
     }
 
+    public void searchList(ArrayList<CryptoModel> searchedList){
+        cryptoModelArrayList = searchedList;
+        notifyDataSetChanged();
+    }
 
     //implement layout file
     @NonNull
@@ -56,14 +60,14 @@ public class CryptoAdapter extends RecyclerView.Adapter<CryptoAdapter.CryptoView
     }
 
 
-    public class CryptoViewholder extends RecyclerView.ViewHolder{
+    public static class CryptoViewholder extends RecyclerView.ViewHolder{
         private TextView cryptoName, symbolCrypto, priceCrypto;
 
         public CryptoViewholder(@NonNull View itemView) {
             super(itemView);
             cryptoName = itemView.findViewById(R.id.idCurrencyName);
             symbolCrypto = itemView.findViewById(R.id.idCryptoSymbol);
-            priceCrypto = itemView.findViewById(R.id.idCryptoSymbol);
+            priceCrypto = itemView.findViewById(R.id.idCryptoPrice);
         }
     }
 }
