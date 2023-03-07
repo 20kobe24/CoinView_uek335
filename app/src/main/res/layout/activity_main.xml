@@ -9,7 +9,7 @@
     tools:ignore="ExtraText">
 
     <EditText
-        android:id="@+id/EditSearch"
+        android:id="@+id/idEditSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -23,7 +23,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/EditSearch"
+        android:layout_below="@+id/idEditSearch"
         android:id="@+id/idRVPriceCource"
         />
 
@@ -31,7 +31,7 @@
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/LoadingBar"
+        android:id="@+id/idLoadingBar"
         android:visibility="gone"
         android:layout_centerInParent="true"
         />
