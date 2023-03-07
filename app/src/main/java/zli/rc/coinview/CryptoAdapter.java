@@ -11,11 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import zli.rc.coinview.model.CryptoModel;
+import zli.rc.coinview.model.MoreDetailedCryptoModel;
 
 /*
    X-CMC_PRO_API_KEY
@@ -27,6 +29,18 @@ public class CryptoAdapter extends RecyclerView.Adapter<CryptoAdapter.CryptoView
     private ArrayList<CryptoModel> cryptoModelArrayList;
     private Context context;
     private static DecimalFormat decimalFormat = new DecimalFormat("#.##");
+
+    private List<MoreDetailedCryptoModel> cryptoList;
+    private static OnItemClickListener listener;
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        CryptoAdapter.listener = listener;
+    }
+
 
     public CryptoAdapter(ArrayList<CryptoModel> cryptoModelArrayList, Context context) {
         this.cryptoModelArrayList = cryptoModelArrayList;
@@ -68,6 +82,18 @@ public class CryptoAdapter extends RecyclerView.Adapter<CryptoAdapter.CryptoView
             cryptoName = itemView.findViewById(R.id.idCurrencyName);
             symbolCrypto = itemView.findViewById(R.id.idCryptoSymbol);
             priceCrypto = itemView.findViewById(R.id.idCryptoPrice);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (listener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+        }
         }
     }
-}
+

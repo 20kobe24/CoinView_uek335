@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -49,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
         cryptosRV.setLayoutManager(new LinearLayoutManager(this));
         cryptosRV.setAdapter(cryptoAdapter);
         getCryptoData();
+        cryptoAdapter.setOnItemClickListener(new CryptoAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent intent = new Intent(MainActivity.this, MoreDetailedCrypto.class);
+                startActivity(intent);
+            }
+        });
 
         searchInput.addTextChangedListener(new TextWatcher() {
             @Override
