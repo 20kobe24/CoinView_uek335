@@ -1,0 +1,119 @@
+commit 61db021d8ee93df03acefd88b0aa215be4ba61c4
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 16:07:36 2023 +0100
+
+    fix(readmefile): I updated my readme file
+
+commit f3c795d2f016833da9db3466a30df05fe72abce9
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 15:24:59 2023 +0100
+
+    add: test
+
+commit 926c936977e6f5ccb6ff689e5329e6fd5c5d71d8
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 14:10:58 2023 +0100
+
+    add: Espresso Test
+
+commit e08570c77210dadc3d7432d7c1b9eefec20bd6fa
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 13:50:00 2023 +0100
+
+    feat(linter): I added a linter that checks pascalcase, camelcase and for englishgrammar
+
+commit f4137482aab7e2cec1baa7a7d959751b0eca34ad
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 11:33:19 2023 +0100
+
+    feat(cryptowidget): implented crypto widget and some string
+
+commit 74b4ce8137c8058c5f4c00a29a0b6df6e5ce8417
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 09:53:18 2023 +0100
+
+    feat(ic_crypto.xml): implemented app icon
+
+commit 17ffbac74274f349a87df9aa05f6b06fbbdd491c
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Wed Mar 8 00:40:57 2023 +0100
+
+    add: onItemClick funktionality so that moredetailedcrypto.xml gets displayed
+
+commit e80808c610ccd2060da0c00a66ec0654f8bda79a
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 22:54:58 2023 +0100
+
+    feat(MoreDetailedCryptoModel): created new model for the the pricechange
+
+commit a077d2b743e56a314741bb7ec549675fb5f3c931
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 22:00:58 2023 +0100
+
+    feat(MainActivity): added search funtionality and fixed bug of not displaying the data
+
+commit e5f729a9d844ed9c15fcf21391ec1d507d1cf841
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 20:18:56 2023 +0100
+
+    feat(MainActvity): created the method to get the crypto data from coinmarketcap
+
+commit 00b77a33fd205fcbcd27f88813b80270f2ce70bb
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 16:10:55 2023 +0100
+
+    feat(CryptoAdapter): created the adapter class to set data to each item
+
+commit 054d8f6b7457074eaf586d04a89104158c6d9be0
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 15:52:47 2023 +0100
+
+    fix(cryptomodel): removed lombok annotations because it didnt really quite work
+
+commit df08645a5ce7e57b31188e872ae19cb20b9211fd
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 13:42:01 2023 +0100
+
+    created Crypto Adapter Class
+
+commit dac31d366f7dd267c3dae8daa2a136017b8712b7
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 13:16:21 2023 +0100
+
+    feat(cryptomodel, activitymain.xml, cryptoitem.xml): created new model and crypto_item.xml. fixed activitymain.xml
+
+commit d4e68adfe87f96838e5d3b412905391f714c24b3
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 09:51:50 2023 +0100
+
+    feat(build.gradle and cryptomodel): implemented new dependecy for lombok and created cryptomodel
+
+commit d3db55067df7eba7e74ec020eeb7fa6be95aa11d
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 09:30:03 2023 +0100
+
+    feat(MainActivity): declared variables and initialized them
+
+commit 79781e32a92245c9095c67262ecb1f684db39bf1
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Tue Mar 7 09:02:00 2023 +0100
+
+    fix: dependency
+
+commit 026da19ce0f59cecfc45560e28cbfabf11735897
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Mon Mar 6 22:26:57 2023 +0100
+
+    added: dependency, colors, permission to internet
+
+commit 7e92e458d677e8d50492f810e0661d1eb15e9125
+Author: Ryan <ryan.carpio@hotmail.com>
+Date:   Mon Mar 6 21:10:56 2023 +0100
+
+    base project
+
+commit a7cc8304c30d283d66c18c558bbc68c92088fe97
+Author: 20kobe24 <84101137+20kobe24@users.noreply.github.com>
+Date:   Mon Mar 6 20:56:57 2023 +0100
+
+    Initial commit
