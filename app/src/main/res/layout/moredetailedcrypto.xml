@@ -19,7 +19,7 @@
             android:id="@+id/idCryptoName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crypto Name"
+            android:text="Crypto Name:                              Ethereum"
             android:textColor="@color/shade_black_1"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="Price"
+            android:text="Price:                                                               $1'436"
             android:textColor="@color/shade_black_1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="1h change"
+            android:text="1h change:                                                        0.12%"
             android:textColor="@color/shade_black_1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="3h change"
+            android:text="3h change:                                                        0.02%"
             android:textColor="@color/shade_black_1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="24h change"
+            android:text="24h change:                                                       1.8%"
             android:textColor="@color/shade_black_1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="7d change"
+            android:text="7d change:                                                          3.8%"
             android:textColor="@color/shade_black_1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="30d change"
+            android:text="30d change:                                                        2.8%"
             android:textColor="@color/shade_black_1"
             android:textSize="16sp"
             android:textStyle="bold" />
